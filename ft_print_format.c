@@ -23,38 +23,4 @@ int     ft_print_format(char specifier, va_list args)
 		return (ft_putchar('%'));
 	return (0);
 }
-/*
-int	ft_putunsigned(unsigned int n)
-{
-	int		len = 0;
 
-	if (n >= 10)
-		len += ft_putunsigned(n/10);
-	len += ft_putchar(n % 10 + '0');
-	return (len);
-}
-
-int	ft_puthex(unsigned int n, char format)
-{
-	int		len = 0;
-	char	*base;
-
-	base = (format == 'x') ? "0123456789abcdef" : "0123456789ABCDEF";
-	if (n >= 16)
-		len += ft_puthex(n / 16, format);
-	len += ft_putchar(base[n % 16]);
-	return (len);
-}
-
-int	ft_putptr(unsigned long n)
-{
-	int		len = 0;
-	char	*base = "0123456789abcdef";
-	
-	if (n >= 16)
-		len += ft_putptr(n / 16);
-	len += ft_putchar(base[n % 16]);
-	return	(len);
-}
-
-*/
