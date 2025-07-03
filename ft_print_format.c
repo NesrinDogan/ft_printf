@@ -14,10 +14,12 @@ int     ft_print_format(char specifier, va_list args)
 		return (ft_puthex(va_arg(args, unsigned int), specifier));
 	else if (specifier == 'p')
 	{
-		int len = 0;
-		len += ft_putstr("0x");
-		len += ft_putptr((unsigned long)va_arg(args, void *));
-		return (len);
+		void *ptr = va_arg(args, void *);
+
+		if (ptr == NULL)
+			return (write(1, "(nil)", 5));
+		write(1, "0x", 2);
+		return (2 + ft_putptr((unsigned long long)ptr));
 	}
 	else if (specifier == '%')
 		return (ft_putchar('%'));

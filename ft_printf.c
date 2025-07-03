@@ -6,10 +6,12 @@
 int ft_printf(const char *format, ...)
 {
     va_list args;
-    int i = 0;
-    int print_len = 0;
+    int i;
+    int print_len;
 
     va_start(args, format);
+    print_len = 0;
+    i = 0;
     while (format[i])
     {
         if (format[i] == '%' && format[i + 1])
@@ -22,3 +24,5 @@ int ft_printf(const char *format, ...)
     va_end(args);
     return (print_len);
 }
+
+
