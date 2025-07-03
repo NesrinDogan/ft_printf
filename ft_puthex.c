@@ -10,7 +10,7 @@ int	ft_puthex(unsigned int n, char format)
 	
 	if (format == 'x')
 		base = HEX_DOWN;
-	else
+	else if (format == 'X')
 		base = HEX_UP;
 	
 	if (n >= 16)
