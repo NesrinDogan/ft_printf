@@ -23,4 +23,3 @@ int     ft_print_format(char specifier, va_list args)
 		return (ft_putchar('%'));
 	return (0);
 }
-
