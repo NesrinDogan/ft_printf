@@ -78,7 +78,7 @@ int main(void)
 	ft_printf("OUTPUT FT = %d\n", output_FT);
 
 	ft_printf("\n");
-	
+
 /////////////////////////////////
 //				%s			   //
 /////////////////////////////////
@@ -152,7 +152,7 @@ int main(void)
 	ft_printf("OUTPUT FT = %d\n", output_FT);
 
 	ft_printf("\n");
-	
+
 	void *dummy_ptr = NULL;
 	output_OG = printf("OG -> %p\n", dummy_ptr);
 	output_FT = ft_printf("FT -> %p\n", dummy_ptr);
@@ -167,14 +167,14 @@ int main(void)
 	ft_printf("OUTPUT FT = %d\n", output_FT);
 
 	ft_printf("\n");
-	
+
 	output_OG = printf("OG -> %p\n", (void *)-1);
 	output_FT = ft_printf("FT -> %p\n", (void *)-1);
 	printf("OUTPUT OG = %d\n", output_OG);
 	ft_printf("OUTPUT FT = %d\n", output_FT);
 
 	ft_printf("\n");
-	
+
 	output_OG = printf("OG -> %p\n", (void *)1);
 	output_FT = ft_printf("FT -> %p\n", (void *)1);
 	printf("OUTPUT OG = %d\n", output_OG);
@@ -246,7 +246,7 @@ int main(void)
 	ft_printf("OUTPUT FT = %d\n", output_FT);
 
 	ft_printf("\n");
-	
+
 	ft_printf("INT_MAX-------------------\n");
 	output_OG = printf("OG -> %d\n", INT_MAX);
 	output_FT = ft_printf("FT -> %d\n", INT_MAX);
@@ -278,7 +278,7 @@ int main(void)
 	ft_printf("OUTPUT FT = %d\n", output_FT);
 
 	ft_printf("\n");
-	
+
 	ft_printf("INT_MIN--------------------\n");
 	output_OG = printf("OG -> %d\n", INT_MIN);
 	output_FT = ft_printf("FT -> %d\n", INT_MIN);
@@ -415,7 +415,7 @@ int main(void)
 	ft_printf("OUTPUT FT = %d\n", output_FT);
 
 	ft_printf("\n");
-	
+
 	output_OG = printf("OG -> %x\n", 10);
 	output_FT = ft_printf("FT -> %x\n", 10);
 	printf("OUTPUT OG = %d\n", output_OG);
@@ -457,7 +457,7 @@ int main(void)
 	ft_printf("OUTPUT FT = %d\n", output_FT);
 
 	ft_printf("\n");
-	
+
 	output_OG = printf("OG -> %x\n", 0);
 	output_FT = ft_printf("FT -> %x\n", 0);
 	printf("OUTPUT OG = %d\n", output_OG);
@@ -478,7 +478,7 @@ int main(void)
 	ft_printf("OUTPUT FT = %d\n", output_FT);
 
 	ft_printf("\n");
-	
+
 	output_OG = printf("OG -> %x\n", -1);
 	output_FT = ft_printf("FT -> %x\n", -1);
 	printf("OUTPUT OG = %d\n", output_OG);
@@ -492,7 +492,7 @@ int main(void)
 	ft_printf("OUTPUT FT = %d\n", output_FT);
 
 	ft_printf("\n");
-	
+
 	output_OG = printf("OG -> %x\n", -101);
 	output_FT = ft_printf("FT -> %x\n", -101);
 	printf("OUTPUT OG = %d\n", output_OG);
@@ -616,7 +616,7 @@ int main(void)
 	ft_printf("OUTPUT FT = %d\n", output_FT);
 
 	ft_printf("\n");
-	
+
 	output_OG = printf("OG -> %% %%\n");
 	output_FT = ft_printf("FT -> %% %%\n");
 	printf("OUTPUT OG = %d\n", output_OG);
